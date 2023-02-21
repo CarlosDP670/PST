@@ -71,6 +71,10 @@ h1{
     max-height: 13vh;
     min-height: 5vh;
     border-radius: 25%;
+    background-color: #fff;
+}
+
+.navegacion__img:hover, .navegacion__img:focus, .navegacion__img > .active{
     background-color: rgb(209,209,209);
 }
 
@@ -80,16 +84,17 @@ h1{
 
 
 /*  Botones  */  
-button, .bttn{
-    max-width: 100px;
-    max-height: 30px;
+button{
+    max-width: auto;
+    max-height: auto;
     color: white;
     background-color: rgb(255, 0, 76);
     border:1px solid rgb(252, 67, 123);
-    border-radius: 7px;
-    padding: 6px 12px;
+    border-radius: 1.2vh;
+    padding: 1vh 1vw;
     text-decoration: none;
-    
+    font-weight: bold;
+    line-height: normal;
 }
 
 button:hover, .bttn:hover{
@@ -98,6 +103,18 @@ button:hover, .bttn:hover{
     cursor: pointer;
     box-shadow: 3px 3px rgb(0 0 0 / 50%);
     color: white;
+}
+
+/* inputs */
+input{
+    width: auto;
+	height: 6vh;
+    border: 3px solid #fa038b;
+    border-radius: 1.2vh;
+	background: #fff;
+	line-height: normal;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
 }
 
 /* Ventana modal */

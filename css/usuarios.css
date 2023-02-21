@@ -1,6 +1,5 @@
 .contenido{
-  grid-template-columns: 1fr;
-
+  grid-template-rows: 10vh 80vh;
   grid-template-areas:"buscar"
                       "tabla";
 }
@@ -16,16 +15,19 @@
   gap: 20px;
   justify-items: end;
   align-items: end;
-  padding: 0 20px 10px 0;
-}
-
-.buscar__botones{
-  grid-area: botones;
+  padding: 0 1vw .5vh;
 }
 
 .buscar__buscador{
   width: 50vw;
   grid-area: buscador;
+}
+
+.buscar__botones{
+  grid-area: botones;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .5vw;
 }
 
 .formulario__input{

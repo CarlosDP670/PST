@@ -2,19 +2,20 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <link rel="stylesheet" href="css/nuevo_usuario.css">
 <link rel="stylesheet" href="css/nuevo_empleado.css">
-<link rel="stylesheet" href="css/administrador_de_usuarios.css">
+<link rel="stylesheet" href="css/usuarios.css">
 <title>Administrador De Usuarios</title>
 </head>
 <?php include("layouts/barra.html") ?>
 <div class="contenido">
         <div class="buscar">
             <div class="buscar__buscador">
-                <input type="text" class="formulario__input" name="buscar_input" id="input_buscar">
-                <input type="button" name="buscar" value="Buscar">
+                <input type="text" class="buscar__buscador-input" name="input_buscar" id="input_buscar" placeholder="Buscar">
+                <label for="input_buscar" class="formulario__label">Buscar</label>
+                <button type="button" name="buscar" value="Buscar">Buscar</button>
             </div>
             <div class="buscar__botones">
-                <a class="bttn" role="button" id="open2"><b>Nuevo Empleado</b></a>
-                <a class="bttn" role="button" id="open" ><b>Nuevo Usuario</b></a>
+                <button type="button" name="empleado" id="open2">Nuevo Empleado</a>
+                <button type="button" name="usuario" id="open">Nuevo Usuario</a>
             </div>
         </div>
         <div class="tabla">
@@ -153,12 +154,13 @@
                         <p class="titulo"><strong>DIRECCIÓN</strong></p>
 
                 <!-- Grupo: Estado -->
-                        <div class="BoxFloat" >
-                            <select id="estados" name="estado">
-                                <option hidden>Estado</option>
-                                
-                            </select>
-                        </div>
+                <div class="formulario__grupo" id="estado">
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="estado" id="estado" placeholder="Estado">
+                        <label for="apellido" class="formulario__label">Estado</label>
+
+                    </div>
+                </div>
 
                 <!-- Grupo: Cuidad -->
                 <div class="formulario__grupo" id="ciudad">
@@ -222,7 +224,10 @@
                         <div class="BoxFloat" >
                             <select id="cargo" name="cargo">
                                 <option hidden value=""  >Cargo</option>
-                                
+                                <option value="M">Empty</option>
+                                <option value="F">Empty</option>
+                                <option value="F">Empty</option>
+                                <option value="F">Empty</option>
                             </select>
                         </div>
             
@@ -249,10 +254,9 @@
                         </div>
                     </div>
                 </form>
-
     </div>
 </div>
-<script src="js/administrador_de_usuarios.js"></script>
+<script src="js/ajax.js"></script>
 <?php
     require("layouts/footer.html");
 ?>
