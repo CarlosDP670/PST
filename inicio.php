@@ -5,7 +5,7 @@
 <body>
 
 <?php require("layouts/barra.html") ?> <!-- Barra de navegación -->
-
+<!-- Soy Carlos -->
 <!--Contenido de cada página-->
   <div class="contenido">
     <div class="contenido__img">
