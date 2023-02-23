@@ -1,14 +1,8 @@
-<?php require("layouts/header.html"); ?> <!-- Contiene el cabecero de html y los estilos generales para todos los documentos -->
+<?php require("layouts/header.php"); ?> <!-- Contiene el cabecero de html y los estilos generales para todos los documentos -->
   <link rel="stylesheet" href="css/inicio.css">
   <title>Inicio</title>
 </head>
 <body>
-<?php
-  session_start();
-  if(!isset($_SESSION["usuario"])){
-   header("location: index.html");
-  }
-?>
 
 <?php require("layouts/barra.html") ?> <!-- Barra de navegación -->
 
